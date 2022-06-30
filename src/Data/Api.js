@@ -1,9 +1,9 @@
 function getCategories() {
   const categories = [
-    { key: "all", display: "All", color: "#14AE5C" },
-    { key: "electronics", display: "Electronics", color: "#FFCD29" },
-    { key: "books", display: "Books", color: "#FFCD29" },
-    { key: "music", display: "Music", color: "#FFCD29" },
+    { key: "all", display: "All"},
+    { key: "electronics", display: "Electronics" },
+    { key: "books", display: "Books" },
+    { key: "music", display: "Music" },
   ];
   return categories;
 }

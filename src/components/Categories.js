@@ -21,6 +21,14 @@ const Categories = () => {
     setCurrentProducts(getProducts(currentCategory));
   }, [currentCategory]);
 
+  const getColor = (category) => {
+    if (currentCategory === category.key) {
+      return "#14AE5C";
+    } else {
+      return "#FFCD29";
+    }
+  };
+
   return (
     <Container>
       <Grid
@@ -31,7 +39,6 @@ const Categories = () => {
         marginBottom={3}
       >
         {categories.map((category) => {
-          const color = category.color;
           return (
             <Grid item xs={12} sm={6} lg={3} key={category.key}>
               <Button
@@ -40,7 +47,7 @@ const Categories = () => {
                   width: { xs: "100%", sm: "50%,", lg: "192px" },
                   borderRadius: "3px",
                   height: "48px",
-                  backgroundColor: color,
+                  backgroundColor: getColor(category),
                 }}
                 onClick={() => handleClick(category.key)}
               >
