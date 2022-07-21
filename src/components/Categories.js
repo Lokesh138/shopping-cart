@@ -9,7 +9,7 @@ const Categories = () => {
   const [currentCategory, setCurrentCategory] = useState("all");
   const handleClick = (categoryKey) => {
     if (currentCategory !== categoryKey) {
-      setCurrentCategory(categoryKey);
+      setCurrentCategory(category0Key);
     }
   };
 
